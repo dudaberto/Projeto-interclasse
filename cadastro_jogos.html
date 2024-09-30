@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Jogos</title>
+    <link rel="stylesheet" href="css/interclasse.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Relação dos Jogos</h1>
+        <form action="/submit_jogos" method="post">
+            <div class="form-group">
+                <label for="time1">Time 1:</label>
+                <input type="text" id="time1" name="time1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time2">Time 2:</label>
+                <input type="text" id="time2" name="time2" required>
+            </div>
+
+            <div class="form-group">
+                <label for="data_jogo">Data do Jogo:</label>
+                <input type="date" id="data_jogo" name="data_jogo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="vencedor">Local do Jogo:</label>
+                <input type="text" id="vencedor" name="vencedor" required>
+            </div>
+
+            <button type="submit">Cadastrar Jogo</button>
+        </form>
+    </div>
+</body>
+</html>
